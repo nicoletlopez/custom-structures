@@ -1,0 +1,42 @@
+/**
+ * [Responsive top margin]
+ * @param  {[px,rem,em,%]} $size-sm [top margin size in sm-xs screen]
+ * @param  {[px,rem,em,%]} $size-md [top margin size in md-xl screen]
+ * @return {[attribute]}          [margin-top values from xs-xl]
+ */
+@mixin responsive-margin-top($size-sm, $size-md) {
+    @include media-breakpoint-down(sm) {
+        margin-top: $size-sm;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-top: $size-md;
+    }
+}
+/**
+ * [Responsive font size]
+ * @param  {[rem]} $size [font size in lg-xl]
+ * @return {[attribute]}       [font-size values from xs-xl]
+ */
+@mixin responsive-font-size($size) {
+    @include media-breakpoint-down(sm) {
+        font-size: ($size - .30);
+    }
+
+    @include media-breakpoint-only(md) {
+        font-size: ($size - .15);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size;
+    }
+}
+
+/**
+ * 100% width in xs-sm view
+ */
+%max-width-on-mobile {
+    @include media-breakpoint-down(sm) {
+        width: 100% !important;
+    }
+}
