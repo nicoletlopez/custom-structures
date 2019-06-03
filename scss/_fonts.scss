@@ -1,0 +1,28 @@
+/**
+* IMPORTANT!
+* Get a woff file generator at https://www.fontsquirrel.com/tools/webfont-generator
+* Rename the file as what the class name should be. e.g. gothic.woff will create a css class named "font-gothic"
+*/
+
+//e.g. ("open_sans","gothic")
+$custom-fonts:();
+
+//e.g. "assets/font/"
+$font-folder-path:"";
+
+/**
+* Create @font-face and css classes named .font-customFontName
+*/
+@each $custom-font in $custom-fonts {
+    @font-face {
+        font-family: $custom-font;
+        src: url($font-folder-path + $custom-font+".woff2") format('woff2'),
+            url($font-folder-path + $custom-font+".woff") format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .font-#{$custom-font} {
+        font-family: $custom-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serfont-if, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+}
