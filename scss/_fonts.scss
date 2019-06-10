@@ -20,7 +20,7 @@ $custom-fonts:();
 $font-folder-path:"";
 
 /**
-* Create @font-face and css classes named .font-customFontName
+* Create @font-face and css classes named .font-fontStyle-fontWeight
 */
 @each $family,
 $properties in $custom-fonts {
