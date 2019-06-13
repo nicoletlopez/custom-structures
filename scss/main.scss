@@ -1,13 +1,18 @@
-//@import 'bootstrap-init';
+//@import './themes/theme';
+//@import './themes/admin';
 
 /////////////////NODE_MODULES/////////////////
 //@import 'bootstrap';
 
-/////////////////END NODE_MODULES/////////////////
+/////////////////ABSTRACTS/////////////////
+//@import './abstracts/variables;
+//@import './abstracts/mixins';
+//@import './abstracts/functions';
 
-/////////////////CUSTOMS/////////////////
-//@import 'inits';
-//@import 'fonts';
-//@import 'styles';
 
-/////////////////END CUSTOMS/////////////////
+/////////////////BASE/////////////////
+//@import './base/fonts';
+
+/////////////////COMPONENTS/////////////////
+
+/////////////////LAYOUT/////////////////
