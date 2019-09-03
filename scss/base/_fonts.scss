@@ -1,11 +1,14 @@
 /**
 * IMPORTANT!
 * Get a woff file generator at https://www.fontsquirrel.com/tools/webfont-generator
-* Rename the file as what the class name should be. e.g. gothic.woff will create a css class named "font-gothic"
+* Rename the file as what the class name should be. e.g. gothic-italic-300.woff will create a css class named "gothic-italic-300"
 */
 
 //e.g.
 /*
+fontName:(
+  normal/italic: (100,...,900),
+),
 open_sans:(
   normal:(300,400,500,600),
   italic: (700),
