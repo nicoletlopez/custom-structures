@@ -41,9 +41,9 @@ $properties in $custom-fonts {
             }
 
             .#{$family}-#{$style}-#{$weight} {
-                font-family: $family;
-                font-style: $style;
-                font-weight: $weight;
+                font-family: $family !important;
+                font-style: $style !important;
+                font-weight: $weight !important;
             }
         }
     }
